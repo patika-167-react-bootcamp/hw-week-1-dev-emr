@@ -46,7 +46,7 @@ return findSourceFolder(source).files.find(file => file.id === source);
 // PARENT FOLDER OF FUNCTION
 
 function parentFolderOf(source) {
-    return findSourceFolder(source) ? findSourceFolder(source) : -1
+    return findSourceFolder(source) ? findSourceFolder(source).id : -1
     }
 
 // REMOVE FUNCTION
